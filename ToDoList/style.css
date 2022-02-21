@@ -1,0 +1,25 @@
+body{
+    background: #E5E5E5;
+}
+
+.border-lilac{
+   background: #D1BBFF;
+   /* border */
+   border-radius: 12px;
+   border: 4px solid #bbb2ce;
+   box-shadow: 4px 4px 0px #bbb2ce;
+   border-radius: 12px;
+}
+
+.list{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 32px;
+background: #D6E5FA;
+/* border */
+border: 4px solid #b0c0c3;
+box-shadow: 4px 4px 0px #b0c0c3;
+border-radius: 12px;
+}
