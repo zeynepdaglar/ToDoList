@@ -24,6 +24,10 @@ box-shadow: 4px 4px 0px #b0c0c3;
 border-radius: 12px;
 }
 
+.bgc-list-item{
+    border-radius: 12px;
+}
+
 i{
-   color: #9bb5b9;
+   color: #ffffff;
 }
