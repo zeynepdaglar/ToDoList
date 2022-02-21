@@ -16,84 +16,42 @@
       <br>
       <!-- header -->
           <header id="header"  class="container col-sm-12 border-lilac bgc-lilac">
-              <h1 class="text-center"> <br>  PLANNER</h1> <br>
+              <h1 class="text-center"> <br>TO  DO LİST</h1> <br>
           </header>
       <!-- header end -->
-      <br>
-      <!-- List Head-->
-      <div class="container">
-        <div class="row">
-          <div id="head-to-do" class="col-sm-4 border-lilac bgc-lilac">
-              <h5 class="text-center">To Do List</h5>
-          </div>
-  
-          <div id="head-doing" class="col-sm-4 border-lilac bgc-lilac">
-            <h5 class="text-center">Doing</h5>
-        </div>
-  
-        <div id="head-done"  class="col-sm-4 border-lilac bgc-lilac">
-          <h5 class="text-center">Done</h5>
-          
-      </div>
-        </div>
-      </div>
-      <!-- list head end -->
       <br>
       <!-- content -->
           <section class="container" id="section">
               <div class="row">
                 <!-- article1 -->
               
-                <article  class="col-sm-4 list"> 
+                <article  class="col-sm- list"> 
                    <!-- input -->
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Write here..." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
                   </div>
                   <!-- input end -->
-
-                  <!-- icons -->
-                  <div class="group">
-                  <i class="fa-solid fa-circle-chevron-right"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
+                
+                <!-- list item -->
+                <div class="list-item">
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">
+                    <!-- icons -->
+                       <div class="group">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                       </div>
+                       <!-- icons end -->
+                    </label>
+                    <div class="col-sm-9">
+                      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="work 3 hours">
+                    </div>
                   </div>
-                  <!-- icons end -->
+                </div>
+                <!-- list item end -->
                 </article>
                 <!-- article1 end -->
-
-                <!-- article2 -->
-                <article class="col-sm-4 list">
-                  <!-- input -->
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Write here..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
-                  </div>
-                  <!-- input end -->
-                  <!-- icons -->
-                  <div class="group">
-                  <i class="fa-solid fa-circle-chevron-left"></i>
-                  <i class="fa-solid fa-circle-chevron-right"></i>
-                 </div>
-                 <!-- icons end -->
-                </article>
-                <!-- article2 end -->
-
-                <!-- article3 -->
-                <article class="col-sm-4 list">
-                  <!-- input -->
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Write here..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Add</button>
-                  </div>
-                  <!-- input end -->
-                  <!-- icons -->
-                  <div class="group">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <i class="fa-solid fa-circle-xmark"></i>
-                  </div>
-                  <!-- icons end -->
-                </article>
-                <!-- article3 end -->
               </div>
           </section>
     </div>
