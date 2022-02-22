@@ -25,9 +25,20 @@ border-radius: 12px;
 }
 
 .list-item{
-
+   /* border */
+   border-radius: 12px;
+   border: 4px solid #b0c0c3;
+   box-shadow: 4px 4px 0px #b0c0c3;
+   border-radius: 12px;
 }
 
+
 i{
-   color: #ffffff;
+   color: #b0c0c3;
+}
+
+.btn-icon{
+   background-color: #D6E5FA;
+   border: 0px;
+   font-size: 25px;
 }
