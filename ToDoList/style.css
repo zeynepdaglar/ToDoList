@@ -37,6 +37,11 @@ i{
    color: #b0c0c3;
 }
 
+li{
+   list-style: none;
+}
+
+
 .btn-icon{
    background-color: #D6E5FA;
    border: 0px;
