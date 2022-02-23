@@ -16,20 +16,15 @@ function btnCheck(){
 
 }
 
-//text-box id sine sahip olan elementin içindeki değerleri al
-let textBoxValue = document.querySelector('#textbox').value
-//add butonunu sec
-let btnAdd = document.querySelector('#button-addon2')
-//add butonuna tıklandıgında addList fonksiyonunu çalıştır
-btnAdd.addEventListener('click', addList)
-
-window.onload=function addList(){
-    if(textBoxValue != ""){
+function addList(){
+    //text-box id sine sahip olan elementin içindeki değerleri al
+    let textBoxValue = document.querySelector('#textbox').value
+    // if(textBoxValue != ""){
         //yeni bir li elementi oluştur
         let Li_DOM = document.createElement('li')
         //yeni li ögesini divLi idsine sahip div içine koy
         document.querySelector("#divLi").append(Li_DOM)
         Li_DOM.innerHTML = textBoxValue
-        console.log(textBoxValue)
-    }
+      
+    // }
 }
