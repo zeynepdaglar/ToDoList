@@ -17,13 +17,15 @@ function addList(){
 
         let counter = 1
         //icona tıklandığında çalışıcak fonksiyon:
-        button_DOM.onclick = function btnCheck(self){
+        button_DOM.onclick = function btnCheck(){
             counter++
             if(counter%2==0){
                   i_DOM.className = "fa-regular fa-circle-check"
+                  li_DOM.style.color='grey';
             }
             else{
                 i_DOM.className = "fa-regular fa-circle"
+                li_DOM.style.color='black';
             }
         }
 
@@ -47,4 +49,10 @@ function addList(){
         let hr_DOM = document.createElement('hr')
         ul_DOM.append(hr_DOM)
     }
+}
+
+buttonDelete_DOM.onclick = function deleteItem(){
+    let litext = document.querySelector('li')
+    
+
 }
