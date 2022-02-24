@@ -17,21 +17,31 @@ function addList(){
 
         let counter = 1
         //icona tıklandığında çalışıcak fonksiyon:
-        button_DOM.onclick = function btnCheck(){
+        button_DOM.onclick = function btnCheck(self){
             counter++
             if(counter%2==0){
-                  i_DOM.className = "fa-regular fa-circle-check btn-icon"
-                  //tıklanması durumunda ustunun cizilmesini sağlar
-                  // let text = document.querySelector('li')
-                  // text.style.textDecoration = "line-through"
+                  i_DOM.className = "fa-regular fa-circle-check"
             }
             else{
                 i_DOM.className = "fa-regular fa-circle"
-                // let textt = document.querySelector('li')
-                // textt.style.textDecoration = "none"
             }
         }
 
+        //yeni buton olustr
+        let buttonDelete_DOM = document.createElement('button')
+        //yeni butona class ver
+        buttonDelete_DOM.className = "btn-icon"
+        //butonu li içine ekle 
+        li_DOM.append(buttonDelete_DOM)
+
+        //i oluştur
+        let deleteIcon = document.createElement('i')
+        //i için class ver
+        deleteIcon.classList.add("fa-regular", "fa-circle-xmark")
+        //butonun içine iconu koy
+        buttonDelete_DOM.append(deleteIcon)
+
+        //li içine text ekle
         li_DOM.append(textBoxValue)
 
         let hr_DOM = document.createElement('hr')
