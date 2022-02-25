@@ -2,6 +2,7 @@
 function addList(){
     // text-box id sine sahip olan elementin içindeki değerleri al
     let textBoxValue = document.querySelector('#textbox').value
+  
     if(textBoxValue != ""){
 
         let ul_DOM = document.querySelector('#ul')
@@ -9,7 +10,7 @@ function addList(){
         ul_DOM.append(li_DOM)
 
         let button_DOM = document.createElement('button')
-        button_DOM.className = 'btn-icon'
+        button_DOM.classList.add("btn-icon")
         li_DOM.append(button_DOM)
         let i_DOM = document.createElement('i')
         i_DOM.classList.add("fa-regular", "fa-circle")
@@ -20,39 +21,38 @@ function addList(){
         button_DOM.onclick = function btnCheck(){
             counter++
             if(counter%2==0){
-                  i_DOM.className = "fa-regular fa-circle-check"
+                  i_DOM.classList.add("fa-regular", "fa-circle-check")
                   li_DOM.style.color='grey';
             }
             else{
-                i_DOM.className = "fa-regular fa-circle"
+                i_DOM.classList.add("fa-regular", "fa-circle")
                 li_DOM.style.color='black';
             }
         }
 
-        //yeni buton olustr
         let buttonDelete_DOM = document.createElement('button')
-        //yeni butona class ver
-        buttonDelete_DOM.className = "btn-icon"
-        //butonu li içine ekle 
+        buttonDelete_DOM.classList.add("btn-icon", "btn-delete")
         li_DOM.append(buttonDelete_DOM)
+        
+        //silme butonuna tıklandığında:
+        buttonDelete_DOM.onclick = function deleteItem(p){
+            //bir üst elemana ulaşır
+            let parent =buttonDelete_DOM.parentNode
+            console.log(parent)
+            parent.remove()
+        }
 
-        //i oluştur
         let deleteIcon = document.createElement('i')
-        //i için class ver
         deleteIcon.classList.add("fa-regular", "fa-circle-xmark")
-        //butonun içine iconu koy
         buttonDelete_DOM.append(deleteIcon)
 
-        //li içine text ekle
         li_DOM.append(textBoxValue)
-
         let hr_DOM = document.createElement('hr')
         ul_DOM.append(hr_DOM)
     }
 }
 
-buttonDelete_DOM.onclick = function deleteItem(){
-    let litext = document.querySelector('li')
-    
-
+function deleteAll(){
+    let  val = document.getElementsByTagName("li")
+    val.remove()
 }
