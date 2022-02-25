@@ -1,6 +1,4 @@
-//listeye yeni eleman eklemeyi sağlayan fonksiyon:
 function addList(){
-    // text-box id sine sahip olan elementin içindeki değerleri al
     let textBoxValue = document.querySelector('#textbox').value
   
     if(textBoxValue != ""){
@@ -17,7 +15,6 @@ function addList(){
         button_DOM.append(i_DOM)
 
         let counter = 1
-        //icona tıklandığında çalışıcak fonksiyon:
         button_DOM.onclick = function btnCheck(){
             counter++
             if(counter%2==0){
@@ -34,7 +31,6 @@ function addList(){
         buttonDelete_DOM.classList.add("btn-icon", "btn-delete")
         li_DOM.append(buttonDelete_DOM)
         
-        //silme butonuna tıklandığında:
         buttonDelete_DOM.onclick = function deleteItem(p){
             //bir üst elemana ulaşır
             let parent =buttonDelete_DOM.parentNode
