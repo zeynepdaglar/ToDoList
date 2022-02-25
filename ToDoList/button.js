@@ -48,11 +48,17 @@ function addList(){
 
         li_DOM.append(textBoxValue)
         let hr_DOM = document.createElement('hr')
-        ul_DOM.append(hr_DOM)
+        li_DOM.append(hr_DOM)
     }
 }
 
 function deleteAll(){
-    let  val = document.getElementsByTagName("li")
-    val.remove()
+    //tüm li elementlerini getirir
+    let  val = document.getElementsByTagName("li");
+    if(val !=null){
+        while(val.length > 0){
+            console.log(val[0]);
+            val[0].remove();
+        }
+    }
 }
