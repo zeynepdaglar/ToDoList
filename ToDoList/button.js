@@ -22,8 +22,8 @@ function addList(){
             counter++
             if(counter%2==0){
                   i_DOM.classList.add("fa-regular", "fa-circle-check")
-                  li_DOM.style.color='grey';
-            }
+                  li_DOM.style.color='grey';            
+                }
             else{
                 i_DOM.classList.add("fa-regular", "fa-circle")
                 li_DOM.style.color='black';
@@ -49,6 +49,7 @@ function addList(){
         li_DOM.append(textBoxValue)
         let hr_DOM = document.createElement('hr')
         li_DOM.append(hr_DOM)
+        document.querySelector('#textbox').value =""
     }
 }
 
